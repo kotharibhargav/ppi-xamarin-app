@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{150BE917-7C6F-40C7-857C-FBC711B9B17C}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PPI.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>PPI.iOS</AssemblyName>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <BuildIpa>True</BuildIpa>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CustomRenderer\CustomRenderer.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist">
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\Gotham-Black.otf" />
+    <BundleResource Include="Resources\Gotham-BlackIta.otf" />
+    <BundleResource Include="Resources\Gotham-Bold.otf" />
+    <BundleResource Include="Resources\Gotham-BoldIta.otf" />
+    <BundleResource Include="Resources\Gotham-Book.otf" />
+    <BundleResource Include="Resources\Gotham-BookIta.otf" />
+    <BundleResource Include="Resources\Gotham-Light.otf" />
+    <BundleResource Include="Resources\Gotham-LightIta.otf" />
+    <BundleResource Include="Resources\Gotham-Medium.otf" />
+    <BundleResource Include="Resources\Gotham-MediumIta.otf" />
+    <BundleResource Include="Resources\Gotham-Thin.otf" />
+    <BundleResource Include="Resources\Gotham-ThinIta.otf" />
+    <BundleResource Include="Resources\Gotham-Ultra.otf" />
+    <BundleResource Include="Resources\Gotham-UltraIta.otf" />
+    <BundleResource Include="Resources\Gotham-XLight.otf" />
+    <BundleResource Include="Resources\Gotham-XLightIta.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DLToolkit.Forms.Controls.FlowListView">
+      <Version>2.0.11</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="XamEffects">
+      <Version>1.6.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\PPI\PPI.csproj">
+      <Project>{AE40707D-9F1D-4677-972F-0D44C8E122B2}</Project>
+      <Name>PPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AddSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AgendaIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AgendaIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BellSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BlankProfileImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ChatUs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Custom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\CustomSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Eight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EightSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FacebookIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FAQIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FAQIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FilterButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FilterButtonSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FilterNotSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FilterSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\four.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FourSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HomeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HomeIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MapIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MapIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PitchIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PitchIcon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ProfileIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\QRBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\QRCode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Six.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SixSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Ten.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TenSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\YourConnectionsButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AgendaSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\AgendaNotSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MyAgendaNotSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MyAgendaSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Booknow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BooknowSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Half.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HalfSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\One.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\OneSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ThreeSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SignUp2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MainLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SignIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SignUp.png" />
+  </ItemGroup>
+</Project>

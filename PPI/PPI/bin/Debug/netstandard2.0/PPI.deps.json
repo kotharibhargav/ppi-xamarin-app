@@ -1,0 +1,109 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "da35f2825da846f54ebb85002b4bc423d5b7cb94"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "PPI/1.0.0": {
+        "dependencies": {
+          "DLToolkit.Forms.Controls.FlowListView": "2.0.11",
+          "NETStandard.Library": "2.0.3",
+          "XamEffects": "1.6.3",
+          "Xamarin.Forms": "3.4.0.1008975"
+        },
+        "runtime": {
+          "PPI.dll": {}
+        }
+      },
+      "DLToolkit.Forms.Controls.FlowListView/2.0.11": {
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1008975"
+        },
+        "runtime": {
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.FlowListView.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Xamarin.Forms/3.4.0.1008975": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "XamEffects/1.6.3": {
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1008975"
+        },
+        "runtime": {
+          "lib/netstandard1.0/XamEffects.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PPI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DLToolkit.Forms.Controls.FlowListView/2.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n/TIbW3a7q/h5wA5vt8VfkN3eecJN8nMlPVu3NS7hvFODg0YqFHXDgbX1O/a9agcuk5Km6DZqJqpxpcYRS9sOQ==",
+      "path": "dltoolkit.forms.controls.flowlistview/2.0.11",
+      "hashPath": "dltoolkit.forms.controls.flowlistview.2.0.11.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Xamarin.Forms/3.4.0.1008975": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tM9syeev45u92OFENGjq+Zw8WiEwLJFiXe317XpL9SY2RRk9sm2fc1lDVjzwz0da+5ZP5fi24NAPsPQdxBdMwQ==",
+      "path": "xamarin.forms/3.4.0.1008975",
+      "hashPath": "xamarin.forms.3.4.0.1008975.nupkg.sha512"
+    },
+    "XamEffects/1.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XcoxG/ugnmrh+j7q0dhFaU8ouUIIFrBwJvc0FtXrhusvSNov5L8gtynf0hfiu3Ey1Z3R39J1qp8tYCovhuJFRQ==",
+      "path": "xameffects/1.6.3",
+      "hashPath": "xameffects.1.6.3.nupkg.sha512"
+    }
+  }
+}
